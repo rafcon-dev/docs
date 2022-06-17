@@ -22,6 +22,9 @@ Expression trees represent code in a tree-like data structure, where each node i
   
  The following code examples demonstrate how to have the C# compiler create an expression tree that represents the lambda expression `num => num < 5`.  
   
+[!NOTE]
+Make sure you add `using System.Linq.Expressions;` and `using static System.Linq.Expressions.Expression;` at the top of your *.cs* file.
+
 ```csharp  
 Expression<Func<int, bool>> lambda = num => num < 5;  
 ```  
